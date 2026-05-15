@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about us": "About Us",
+    "contact": "Contact",
+    "fqa": "FAQ",
+    "pricing": "Pricing",
+    "login": "Login",
+    "signup": "Sign Up"
+  }
+}

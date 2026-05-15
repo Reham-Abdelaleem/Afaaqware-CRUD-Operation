@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ahmed Mohamed",
+      "email": "ahmed@gmail.com",
+      "password": "$2a$10$examplehash1"
+    },
+    {
+      "id": 2,
+      "name": "Omar Mohamed",
+      "email": "omar@gmail.com",
+      "password": "$2a$10$examplehash2"
+    },
+    {
+      "id": 3,
+      "name": "Sara Ali",
+      "email": "sara@gmail.com",
+      "password": "$2a$10$examplehash3"
+    },
+    {
+      "id": 4,
+      "name": "Mohamed Hassan",
+      "email": "mohamed.hassan@gmail.com",
+      "password": "$2a$10$examplehash4"
+    },
+    {
+      "id": 5,
+      "name": "Laila Ahmed",
+      "email": "laila@gmail.com",
+      "password": "$2a$10$examplehash5"
+    },
+    {
+      "id": 6,
+      "name": "Youssef Adel",
+      "email": "youssef@gmail.com",
+      "password": "$2a$10$examplehash6"
+    },
+    {
+      "id": 7,
+      "name": "Nour Khaled",
+      "email": "nour@gmail.com",
+      "password": "$2a$10$examplehash7"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "../styles/variables.css";
+/* ================= BASE ================= */
+@layer base {
+  body {
+    background: var(--color-background);
+    color: var(--color-text-main);
+    font-family: var(--font-family);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ================= COMPONENTS ================= */
+@layer components {
+  /* Button base */
+  .btn {
+    @apply inline-flex items-center justify-center font-bold rounded-lg
+           transition-all duration-200 cursor-pointer tracking-wide
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary { background: var(--color-primary); color: var(--color-text-inverse); }
+  .btn-primary:hover { background: var(--color-primary-hover); }
+
+  .btn-secondary { background: var(--color-secondary); color: var(--color-text-inverse); }
+  .btn-secondary:hover { background: var(--color-secondary-hover); }
+
+  .btn-info { background: var(--color-info); color: var(--color-text-inverse); }
+  .btn-info:hover { background: var(--color-info-hover); }
+
+  .btn-success { background: var(--color-success); color: var(--color-text-inverse); }
+  .btn-success:hover { background: var(--color-success-hover); }
+
+  .btn-warning { background: var(--color-warning); color: var(--color-text-inverse); }
+  .btn-warning:hover { background: var(--color-warning-hover); }
+
+  .btn-danger { background: var(--color-danger); color: var(--color-text-inverse); }
+  .btn-danger:hover { background: var(--color-danger-hover); }
+
+  /* Input */
+  .input {
+    @apply w-full px-3 py-2 text-sm rounded-lg border transition-all duration-200
+           focus:outline-none focus:ring-2;
+    border-color: var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .input:focus {
+    border-color: var(--color-primary);
+    --tw-ring-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+  }
+
+  /* Card */
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Sidebar */
+  .sidebar {
+    background: var(--color-surface);
+    border-right: 1px solid var(--color-border-light);
+  }
+
+  .sidebar-item-active {
+    background: var(--color-gray-100);
+    color: var(--color-primary);
+  }
+
+  /* Table */
+  .table-header {
+    background: var(--color-gray-50);
+    color: var(--color-gray-900);
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .table-row-hover:hover {
+    background: var(--color-gray-50);
+  }
+}
+
+/* ================= UTILITIES ================= */
+@layer utilities {
+  .text-main { color: var(--color-text-main); }
+  .text-secondary { color: var(--color-text-secondary); }
+  .text-muted { color: var(--color-text-muted); }
+  .text-dimmed { color: var(--color-text-dimmed); }
+  .text-inverse { color: var(--color-text-inverse); }
+
+  .bg-main { background: var(--color-background); }
+  .bg-surface { background: var(--color-surface); }
+  .bg-surface-muted { background: var(--color-surface-muted); }
+
+  .bg-primary-light { background: var(--color-primary-light); }
+  .bg-info-light { background: var(--color-info-light); }
+  .bg-success-light { background: var(--color-success-light); }
+  .bg-warning-light { background: var(--color-warning-light); }
+  .bg-danger-light { background: var(--color-danger-light); }
+
+  .border-main { border-color: var(--color-border); }
+  .border-light { border-color: var(--color-border-light); }
+}
